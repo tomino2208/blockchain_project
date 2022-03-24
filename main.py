@@ -7,7 +7,7 @@ import pandas as pd
 
 
 def stats_accounts():
-    df = pd.read_csv('merged_trxes_1112trx.csv')
+    df = pd.read_csv('data_blocks.csv')
     num = len(df.index)
     senders_transacations = df['from_address'].unique()
     receivers_transacations = df['to_address'].unique()
